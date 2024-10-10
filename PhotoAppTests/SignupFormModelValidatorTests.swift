@@ -50,4 +50,34 @@ final class SignupFormModelValidatorTests: XCTestCase {
         // If the condition is FALSE, the test will fail and print the message
         XCTAssertFalse(isFirstNameValid, "Function-isFirstNameValid() should return FALSE but returned TRUE")
     }
+
+    // Exercise for testing user lastname
+    func testSignupFormModelValidator_WhenValidLastNameProvided_ShouldReturnTrue() {
+        // Act
+        let isLastNameValid = sut.isLastNameValid(lastName: "Gunaydin")
+
+        // Assert
+        XCTAssertTrue(isLastNameValid, "Function-isLastNameValid() should return TRUE but returned FALSE")
+    }
+    
+    func testSignupFormModelValidator_WhenTooShortLastNameProvided_ShouldReturnFalse() {
+        // Act
+        let isLastNameValid = sut.isLastNameValid(lastName: "G")
+
+        // Assert
+        // If the condition is TRUE, the test will pass
+        // If the condition is FALSE, the test will fail and print the message
+        XCTAssertFalse(isLastNameValid, "Function-isLastNameValid() should return FALSE but returned TRUE")
+    }
+
+    // When a long first name is provided, the function should return FAlSE
+    func testSignupFormModelValidator_WhenTooLongLastNameProvided_ShouldReturnFalse() {
+        // Act
+        let isLastNameValid = sut.isLastNameValid(lastName: "GunaydinGundsdsGunaydinGundsds")
+
+        // Assert
+        // If the condition is TRUE, the test will pass
+        // If the condition is FALSE, the test will fail and print the message
+        XCTAssertFalse(isLastNameValid, "Function-isLastNameValid() should return FALSE but returned TRUE")
+    }
 }
