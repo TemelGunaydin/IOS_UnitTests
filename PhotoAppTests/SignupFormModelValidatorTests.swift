@@ -24,9 +24,7 @@ final class SignupFormModelValidatorTests: XCTestCase {
         let isFirstNameValid = sut.isFirstNameValid(firstName: "Temel")
 
         // Assert
-        // If the condition is TRUE, the test will pass
-        // If the condition is FALSE, the test will fail and print the message
-        XCTAssertTrue(isFirstNameValid, "Function-isFirstNameValid() should return TRUE but returned FALSE")
+        // If the condition is TRUE, the test will pass If the condition is FALSE, the test will fail and print the message XCTAssertTrue(isFirstNameValid, "Function-isFirstNameValid() should return TRUE but returned FALSE")
     }
 
     // Test case 2
@@ -34,6 +32,18 @@ final class SignupFormModelValidatorTests: XCTestCase {
     func testSignupFormModelValidator_WhenTooShortFirstNameProvided_ShouldReturnFalse() {
         // Act
         let isFirstNameValid = sut.isFirstNameValid(firstName: "T")
+
+        // Assert
+        // If the condition is TRUE, the test will pass
+        // If the condition is FALSE, the test will fail and print the message
+        XCTAssertFalse(isFirstNameValid, "Function-isFirstNameValid() should return FALSE but returned TRUE")
+    }
+
+    // Test case 3
+    // When a long first name is provided, the function should return FAlSE
+    func testSignupFormModelValidator_WhenTooLongFirstNameProvided_ShouldReturnFalse() {
+        // Act
+        let isFirstNameValid = sut.isFirstNameValid(firstName: "TemelTemelTemel")
 
         // Assert
         // If the condition is TRUE, the test will pass
