@@ -18,6 +18,9 @@
 		AB2FDC7F2CB832A500DE73F9 /* SignupConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB2FDC7E2CB832A500DE73F9 /* SignupConstants.swift */; };
 		ABC10FAE2CBEC58800D3E78F /* SignupWebServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC10FAD2CBEC58800D3E78F /* SignupWebServiceTests.swift */; };
 		ABC10FB02CBEC69800D3E78F /* SignupWebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC10FAF2CBEC69800D3E78F /* SignupWebService.swift */; };
+		ABC10FB22CBEC7E800D3E78F /* SignupFormRequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC10FB12CBEC7E800D3E78F /* SignupFormRequestModel.swift */; };
+		ABC10FB42CBEC96400D3E78F /* SignupResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC10FB32CBEC96400D3E78F /* SignupResponseModel.swift */; };
+		ABC10FB62CBEC9AC00D3E78F /* SignupErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC10FB52CBEC9AC00D3E78F /* SignupErrors.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +49,9 @@
 		AB2FDC7E2CB832A500DE73F9 /* SignupConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupConstants.swift; sourceTree = "<group>"; };
 		ABC10FAD2CBEC58800D3E78F /* SignupWebServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupWebServiceTests.swift; sourceTree = "<group>"; };
 		ABC10FAF2CBEC69800D3E78F /* SignupWebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupWebService.swift; sourceTree = "<group>"; };
+		ABC10FB12CBEC7E800D3E78F /* SignupFormRequestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupFormRequestModel.swift; sourceTree = "<group>"; };
+		ABC10FB32CBEC96400D3E78F /* SignupResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupResponseModel.swift; sourceTree = "<group>"; };
+		ABC10FB52CBEC9AC00D3E78F /* SignupErrors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupErrors.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +95,8 @@
 			children = (
 				9490D3D223F3015900ABE2F9 /* AppDelegate.swift */,
 				9490D3D423F3015900ABE2F9 /* SceneDelegate.swift */,
+				ABC10FB52CBEC9AC00D3E78F /* SignupErrors.swift */,
+				ABC10FB32CBEC96400D3E78F /* SignupResponseModel.swift */,
 				9490D3D623F3015900ABE2F9 /* ViewController.swift */,
 				AB2FDC7C2CB82C4800DE73F9 /* SignupFormModelValidator.swift */,
 				9490D3D823F3015900ABE2F9 /* Main.storyboard */,
@@ -97,6 +105,7 @@
 				9490D3E023F3015A00ABE2F9 /* Info.plist */,
 				AB2FDC7E2CB832A500DE73F9 /* SignupConstants.swift */,
 				ABC10FAF2CBEC69800D3E78F /* SignupWebService.swift */,
+				ABC10FB12CBEC7E800D3E78F /* SignupFormRequestModel.swift */,
 			);
 			path = PhotoApp;
 			sourceTree = "<group>";
@@ -215,8 +224,11 @@
 			files = (
 				9490D3D723F3015900ABE2F9 /* ViewController.swift in Sources */,
 				9490D3D323F3015900ABE2F9 /* AppDelegate.swift in Sources */,
+				ABC10FB42CBEC96400D3E78F /* SignupResponseModel.swift in Sources */,
 				AB2FDC7D2CB82C4800DE73F9 /* SignupFormModelValidator.swift in Sources */,
+				ABC10FB62CBEC9AC00D3E78F /* SignupErrors.swift in Sources */,
 				AB2FDC7F2CB832A500DE73F9 /* SignupConstants.swift in Sources */,
+				ABC10FB22CBEC7E800D3E78F /* SignupFormRequestModel.swift in Sources */,
 				ABC10FB02CBEC69800D3E78F /* SignupWebService.swift in Sources */,
 				9490D3D523F3015900ABE2F9 /* SceneDelegate.swift in Sources */,
 			);

@@ -24,7 +24,8 @@ final class SignupFormModelValidatorTests: XCTestCase {
         let isFirstNameValid = sut.isFirstNameValid(firstName: "Temel")
 
         // Assert
-        // If the condition is TRUE, the test will pass If the condition is FALSE, the test will fail and print the message XCTAssertTrue(isFirstNameValid, "Function-isFirstNameValid() should return TRUE but returned FALSE")
+        // If the condition is TRUE, the test will pass If the condition is FALSE, the test will fail and print the message
+        XCTAssertTrue(isFirstNameValid, "Function-isFirstNameValid() should return TRUE but returned FALSE")
     }
 
     // Test case 2

@@ -16,9 +16,15 @@ final class SignupWebServiceTests: XCTestCase {
         //Arrange
         let sut = SignupWebService()
         
+        let signFormRequestModel = SignupFormRequestModel(firstName:"Temel",
+                                                          lastName:"Gunaydin",
+                                                          email:"test@test.com",
+                                                          password: "123456")
+        
         //Act
-        
-        
+        sut.signup(withForm: signFormRequestModel) { (signupResponseModel, error) in
+                
+        }
         
         //Assert
     }
