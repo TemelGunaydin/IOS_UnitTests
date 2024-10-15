@@ -16,6 +16,8 @@
 		AB2FDC7B2CB82AFB00DE73F9 /* SignupFormModelValidatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB2FDC7A2CB82AFB00DE73F9 /* SignupFormModelValidatorTests.swift */; };
 		AB2FDC7D2CB82C4800DE73F9 /* SignupFormModelValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB2FDC7C2CB82C4800DE73F9 /* SignupFormModelValidator.swift */; };
 		AB2FDC7F2CB832A500DE73F9 /* SignupConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB2FDC7E2CB832A500DE73F9 /* SignupConstants.swift */; };
+		ABC10FAE2CBEC58800D3E78F /* SignupWebServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC10FAD2CBEC58800D3E78F /* SignupWebServiceTests.swift */; };
+		ABC10FB02CBEC69800D3E78F /* SignupWebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC10FAF2CBEC69800D3E78F /* SignupWebService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +44,8 @@
 		AB2FDC7A2CB82AFB00DE73F9 /* SignupFormModelValidatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupFormModelValidatorTests.swift; sourceTree = "<group>"; };
 		AB2FDC7C2CB82C4800DE73F9 /* SignupFormModelValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupFormModelValidator.swift; sourceTree = "<group>"; };
 		AB2FDC7E2CB832A500DE73F9 /* SignupConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupConstants.swift; sourceTree = "<group>"; };
+		ABC10FAD2CBEC58800D3E78F /* SignupWebServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupWebServiceTests.swift; sourceTree = "<group>"; };
+		ABC10FAF2CBEC69800D3E78F /* SignupWebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupWebService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +96,7 @@
 				9490D3DD23F3015A00ABE2F9 /* LaunchScreen.storyboard */,
 				9490D3E023F3015A00ABE2F9 /* Info.plist */,
 				AB2FDC7E2CB832A500DE73F9 /* SignupConstants.swift */,
+				ABC10FAF2CBEC69800D3E78F /* SignupWebService.swift */,
 			);
 			path = PhotoApp;
 			sourceTree = "<group>";
@@ -101,6 +106,7 @@
 			children = (
 				9490D3EB23F3015A00ABE2F9 /* Info.plist */,
 				AB2FDC7A2CB82AFB00DE73F9 /* SignupFormModelValidatorTests.swift */,
+				ABC10FAD2CBEC58800D3E78F /* SignupWebServiceTests.swift */,
 			);
 			path = PhotoAppTests;
 			sourceTree = "<group>";
@@ -211,6 +217,7 @@
 				9490D3D323F3015900ABE2F9 /* AppDelegate.swift in Sources */,
 				AB2FDC7D2CB82C4800DE73F9 /* SignupFormModelValidator.swift in Sources */,
 				AB2FDC7F2CB832A500DE73F9 /* SignupConstants.swift in Sources */,
+				ABC10FB02CBEC69800D3E78F /* SignupWebService.swift in Sources */,
 				9490D3D523F3015900ABE2F9 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -219,6 +226,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ABC10FAE2CBEC58800D3E78F /* SignupWebServiceTests.swift in Sources */,
 				AB2FDC7B2CB82AFB00DE73F9 /* SignupFormModelValidatorTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
