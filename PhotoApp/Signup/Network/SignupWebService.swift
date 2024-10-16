@@ -2,10 +2,12 @@ import Foundation
 
 class SignupWebService {
     
-    private var urlString : String
+    private var urlString: String
+    private var urlSession: URLSession
     
-    init(urlString: String) {
+    init(urlString: String,urlSession: URLSession = .shared) {
         self.urlString = urlString
+        self.urlSession = urlSession
     }
     
     func signup(withForm formModel: SignupFormRequestModel,completed: @escaping (SignupResponseModel,SignupErrors)-> Void) {
