@@ -15,7 +15,8 @@ final class SignupWebServiceTests: XCTestCase {
     //This will fail. Because signup method is empty and does not return "ok"
     func testSignupWebService_WhenGivenSuccessfulResponse_ReturnsSuccess() {
         //Arrange
-        let sut = SignupWebService()
+        // We added urlString for below and provided the urlString
+        let sut = SignupWebService(urlString: "https:\\bit.ly\\signup-mock-service-users")
         
         let signFormRequestModel = SignupFormRequestModel(firstName:"Temel",
                                                           lastName:"Gunaydin",
