@@ -21,6 +21,11 @@ class SignupWebService {
         request.setValue("application/json", forHTTPHeaderField: "Content-Type") // this means we are sending json content
         request.setValue("application/json", forHTTPHeaderField: "Accept") // this means we want json as a response
         request.httpBody = try? JSONEncoder().encode(formModel) // our http body that we are sending will be encoded(formModel should be Encodable)
+        
+        let dataTask = URLSession.shared.dataTask(with: request) { data,response, error in
+            
+        }
     
+        dataTask.resume()
     }
 }
