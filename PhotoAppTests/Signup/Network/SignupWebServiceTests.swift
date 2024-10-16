@@ -16,7 +16,7 @@ final class SignupWebServiceTests: XCTestCase {
     func testSignupWebService_WhenGivenSuccessfulResponse_ReturnsSuccess() {
         //Arrange
         // We added urlString for below and provided the urlString
-        let sut = SignupWebService(urlString: "https:\\bit.ly\\signup-mock-service-users")
+        let sut = SignupWebService(urlString: "https://tlyqhtlbn8.execute-api.us-east-1.amazonaws.com/prod/signup-mock-service/users")
         
         let signFormRequestModel = SignupFormRequestModel(firstName:"Temel",
                                                           lastName:"Gunaydin",
